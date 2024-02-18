@@ -218,7 +218,7 @@ img {
   color: #ffae00;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 850px) {
   about-link {
     transition: 0.2s;
     padding: 70px 4%;
