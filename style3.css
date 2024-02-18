@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.first-container {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin-top: 150px;
+}
+
+.container-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  width: 90rem;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  align-items: start;
+}
+.grid-item {
+  background-image: url(img/a1.png);
+  background-color: #ffae00;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(145, 122, 45, 0.306);
+  cursor: pointer;
+  transition: 0.2s;
+  margin-right: 20px;
+}
+.grid-item :hover {
+  transform: translateY(-0.5%);
+}
+.card-img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.card-header {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-text {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffae00;
+  background-color: #1f1f21;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: rgb(255, 255, 255);
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+.first-container h1 {
+  font-size: 35px;
+  color: rgb(249, 249, 249);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: -50px;
+  margin-top: 20px;
+}
+
+.first-container h1 span {
+  color: #ffae00;
+}
+
+.card-content h2 {
+  text-align: center;
+}
