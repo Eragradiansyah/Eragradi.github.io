@@ -217,3 +217,34 @@ img {
 .container h1 span {
   color: #ffae00;
 }
+
+@media (max-width: 950px) {
+  about-link {
+    transition: 0.2s;
+    padding: 70px 4%;
+  }
+  .home-about {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -550px;
+  }
+
+  .home-text-about {
+    order: 2;
+    margin-top: -400px;
+  }
+
+  .home-img-about {
+    margin: auto;
+    height: auto;
+    width: auto;
+    margin-left: 90px;
+  }
+
+  .home-img-about img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+  }
+}
