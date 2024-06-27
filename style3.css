@@ -34,7 +34,7 @@ html {
 }
 
 .grid-item {
-  background-color: #ffae00;
+  background-color: #ffffff;
   border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 3rem rgba(145, 122, 45, 0.3);
@@ -47,6 +47,8 @@ html {
 
 .grid-item:hover {
   transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+  background: #ffae00;
 }
 
 .card-img {
@@ -93,7 +95,7 @@ html {
 
 .card-btn:hover,
 .card-btn:active {
-  background-color: #262626;
+  background-color: rgb(20, 20, 20);
 }
 
 .card-btn span {
