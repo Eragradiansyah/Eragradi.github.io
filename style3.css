@@ -116,7 +116,7 @@ html {
 
 @media screen and (max-width: 1120px) {
   .grid-item {
-    width: calc(70% - 20px);
+    width: calc(50% - 20px);
   }
 
   .card-header {
