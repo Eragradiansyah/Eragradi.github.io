@@ -217,7 +217,7 @@ img {
 }
 
 .container h1 span {
-  color: var(--first-color);
+  color: var(--main-color);
 }
 
 @media (max-width: 1370px) {
