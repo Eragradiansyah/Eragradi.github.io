@@ -114,7 +114,7 @@ html {
   color: #ffae00;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1120px) {
   .grid-item {
     width: calc(50% - 20px);
   }
