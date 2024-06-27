@@ -131,3 +131,10 @@ html {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .grid-item {
+    width: 79%;
+    margin-right: 0;
+  }
+}
