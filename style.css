@@ -11,7 +11,7 @@
   --bg-color: #1f1f21;
   --text-color: #fff;
   --main-color: #ffae00;
-  --big-font: 7 rem;
+  --big-font: 7rem; /* Removed space between '7' and 'rem' */
   --p-font: 1.1rem;
 }
 
@@ -55,7 +55,7 @@ header {
   font-weight: 500;
   color: var(--text-color);
   margin: 0 25px;
-  transition: all;
+  transition: all 0.3s ease;
 }
 
 .navbar a:hover {
@@ -77,7 +77,7 @@ header {
   cursor: pointer;
 }
 
-#memu-icon {
+#menu-icon {
   font-size: 28px;
   margin-left: 10px;
   z-index: 6;
@@ -112,7 +112,7 @@ section {
   padding: 5px 25px;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
   box-shadow: 0px 20px 40px #00000070;
-  border: 1px solid#3b3b3b;
+  border: 1px solid #3b3b3b;
   border-radius: 100px;
   color: var(--text-color);
   font-weight: 700;
@@ -142,7 +142,7 @@ section {
   font-size: 16px;
   font-weight: 600;
   border-radius: 8px;
-  transition: all 0.6s rase-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .btn:hover {
@@ -161,7 +161,7 @@ section {
 .two:hover {
   color: #141414;
   background: var(--text-color);
-  border: 2 solid var(--text-color);
+  border: 2px solid var(--text-color);
 }
 
 .share {
@@ -171,6 +171,7 @@ section {
   display: flex;
   align-items: center;
 }
+
 .share p {
   font-size: 17px;
   color: var(--text-color);
@@ -185,7 +186,7 @@ section {
   width: 45px;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
   box-shadow: 0px 20px 40px #00000070;
-  border: 1px solid#3b3b3b;
+  border: 1px solid #3b3b3b;
   border-radius: 50%;
   color: var(--text-color);
   font-size: 20px;
@@ -316,7 +317,7 @@ section {
     font-size: 2rem;
     font-weight: 400;
   }
-  .navbar .open {
+  .navbar.open {
     left: 0;
   }
 }
@@ -360,6 +361,7 @@ section {
   text-transform: uppercase;
 }
 
+/* Menambahkan gaya untuk .home-text-about h1 dan p */
 .home-text-about h1 {
   font-size: var(--p-font);
   margin: 23px 0;
@@ -389,4 +391,53 @@ section {
   transform: translate(-5px);
   background: transparent;
   color: var(--main-color);
+}
+
+/* Responsivitas untuk .home-about */
+@media (max-width: 1020px) {
+  .home-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img-about {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+  }
+
+  .home-text-about h1 {
+    font-size: 2rem;
+  }
+
+  .home-text-about p {
+    font-size: 1rem;
+  }
+
+  .btn-about {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-text-about h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-text-about p {
+    font-size: 0.9rem;
+  }
+
+  .btn-about {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsivitas untuk .home-about section */
+@media (max-width: 950px) {
+  .home-about {
+    padding: 70px 4%;
+  }
 }
