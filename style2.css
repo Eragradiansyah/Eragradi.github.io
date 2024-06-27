@@ -164,6 +164,19 @@ img {
   }
 }
 
+.container h1 {
+  font-size: 2.5rem; /* Adjusted font size */
+  color: #f2f2f2;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-right: 2rem; /* Adjusted margin */
+  margin-bottom: -0.5rem; /* Adjusted margin */
+}
+
+.container h1 span {
+  color: var(--main-color);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
@@ -175,6 +188,11 @@ img {
     width: calc(100% - 2rem); /* Full width with adjusted padding */
     padding: 1rem; /* Adjusted padding */
     bottom: -8rem; /* Adjusted position */
+  }
+  .container h1 {
+    font-size: 1.7rem;
+    padding: 1rem;
+    text-align: center;
   }
 }
 
@@ -206,22 +224,16 @@ img {
   }
 }
 
-.container h1 {
-  font-size: 2.5rem; /* Adjusted font size */
-  color: #f2f2f2;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  text-align: left;
-  margin-right: 2rem; /* Adjusted margin */
-  margin-bottom: -0.5rem; /* Adjusted margin */
-}
-
-.container h1 span {
-  color: var(--main-color);
-}
-
 @media (max-width: 1370px) {
   .container {
     padding: 70px 4%; /* Adjusted padding */
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
   }
 }
